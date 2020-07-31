@@ -38,6 +38,7 @@
  - [Thu Jul 23 20:19:36 UTC 2020] tests: author string incorrect for [467521895713926071,11100224317842467237,1960687713625528252,13069639178635581156,2840789860386075865,3843475204841863044,4974885501506490568,17662431745840099933,6836233999900169055,5352464221420183959] and [9405131435028266265] - (first test) ; and Keywords! ; launch for 100,000 (large test) - STOP stuck on a ref 61093635834171547: bug?
  - [Fri Jul 24 13:06:16 UTC 2020]: when no matching, need to update mendeleyChecked. Added source and type. (prev wont have)  ; fix ; Test ; add processing ; set numresp to 100 (a few ~5 ? did not match at 20 during test) ; launch collection 200000 Fri Jul 24 13:23:10 UTC 2020
  - [Thu Jul 30 08:59:45 UTC 2020] bug https connexion still allocated  => reset failed db.references.find({mendeleyChecked:"failed"}).count() : 1847 ; db.references.updateMany({mendeleyChecked:"failed"},{$set:{mendeleyChecked:"false"}}) : { "acknowledged" : true, "matchedCount" : 1847, "modifiedCount" : 1847 } ; fix by resetting client ; relaunch
-
+ - [[Thu Jul 30 15:33:15 UTC 2020] Mendeley query : +The+developed+world+in+the+21st+century+a+future+of+diversity+and+ageing
+javax.json.stream.JsonParsingException: Unexpected char 60 at (line no=1, column no=1, offset=0)] => relaunch
 
 
