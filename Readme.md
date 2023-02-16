@@ -40,5 +40,9 @@
  - [Thu Jul 30 08:59:45 UTC 2020] bug https connexion still allocated  => reset failed db.references.find({mendeleyChecked:"failed"}).count() : 1847 ; db.references.updateMany({mendeleyChecked:"failed"},{$set:{mendeleyChecked:"false"}}) : { "acknowledged" : true, "matchedCount" : 1847, "modifiedCount" : 1847 } ; fix by resetting client ; relaunch
  - [[Thu Jul 30 15:33:15 UTC 2020] Mendeley query : +The+developed+world+in+the+21st+century+a+future+of+diversity+and+ageing
 javax.json.stream.JsonParsingException: Unexpected char 60 at (line no=1, column no=1, offset=0)] => relaunch
+ - [Fri Jul 31 14:06:46 UTC 2020] stop, relaunch 700000
+ - [Tue  8 Sep 2020 16:00:48 BST] 08/09/2020: collection finished in August (all mendeleyChecked) On 649033: 307304 true, 341729 failed. No abstracts! (removed by default?)
+ - [Tue  8 Sep 2020 16:00:48 BST] Correct (by hand?) wrong author/keyword fields (by hand: missing last letter).  db.references.find({author:{$regex: /^,/}}).count() = 13 ; db.references.find({keywords:{$regex: /^;/}}).count() = 6 ; 9405131435028266265,5352464221420183959,6836233999900169055,17662431745840099933,4974885501506490568,3843475204841863044,2840789860386075865,13069639178635581156,1960687713625528252,11100224317842467237,467521895713926071,16127957173632968155(not trimmed for space: already ok besides comma?),3865113944388061174(idem);17550470832383195739 kw only: "INTERNATIONAL trade; TARIFF; TRADE regulation; C"-> remove last
+ - [Tue Sep  8 15:51:54 UTC 2020] export metadata
 
 
