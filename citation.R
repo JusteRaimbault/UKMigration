@@ -83,20 +83,7 @@ for(c in unique(com$membership)){
 
 # expert knowledge naming
 
-citcomnames = list('31'='Real-time mapping','15'='Traffic control','9'='Flying UAV',
-                   '12'='Remote sensing','10'='Traffic forecasting','11'='Traffic safety',
-                   '30'='Transit planning','1'='Fuzzy cognitive maps',
-                   '22'='Rescue robots','24'='Autonomous vehicles','26'='Complexity/ABM',
-                   '20'='Art/Culture','3'='Natural hazards', # landslides
-                   '23'='Computer vision','29'='Lidar mapping','7'='Rainfall',
-                   '18'='Smart cities','6'='Game theory','5'='Living architecture',
-                   '8'='3D Modeling','17'='Urbanism','13'='Air pollution',
-                   '14'='Urban growth/CA','32'='Crowd simulation','21'='GIS',
-                   '27'='Social intelligence','28'='Image capture', # noise
-                   '4'='Flooding','33'='Biology', # noise
-                   '16'='Self-organization','25'='Bio-inspired computing',
-                   '19'='Power line detection',
-                   '2'='Computer vision' # noise
+citcomnames = list(
                    )
 
 # size distrib
